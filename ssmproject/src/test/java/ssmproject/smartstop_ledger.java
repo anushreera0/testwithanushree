@@ -9,7 +9,7 @@ public class smartstop_ledger {
 		double prorateRent=36.67;
 		double prorateIns=4.03;
 		double prorateFees=1.47;
-		double insAmount=11.00;	
+		double insAmount=11.00;
 		double feesAmount=4.00;
 		double noOfMonthsPaid = Math.floor(amountPaid/totalMonthly);
 		double diffAmount=0.00;
@@ -67,7 +67,7 @@ public class smartstop_ledger {
 					remCredits=remCredits-feesAmount;
 					totalprepay=prepayrent+prepayins+prepayFees;
 					remCredits=totalprepay-remCredits;
-				
+
 				if(remCredits>rentAmount) {//1>100
 					prepayrent=prepayrent+rentAmount;
 					remCredits=remCredits-rentAmount;

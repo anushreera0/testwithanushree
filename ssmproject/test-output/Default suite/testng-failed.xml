@@ -3,23 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ssmproject.login_to_application">
+      <class name="tests.PerformRentalWithInsurance">
         <methods>
-          <include name="selectUnitType"/>
-          <include name="launch"/>
-          <include name="selectUnit"/>
-          <include name="login"/>
-          <include name="clickNewbutton"/>
-          <include name="clickSaveincustomerInfoDetailsInRentalScreen"/>
-          <include name="clickProspects"/>
-          <include name="clickcustomerInfoDetailsInRentalScreen"/>
-          <include name="ClickRental"/>
-          <include name="contactInfo"/>
-          <include name="setup"/>
-          <include name="customerInfoDetailsInRentalScreen"/>
-          <include name="clickUnitInfo"/>
+          <include name="ContactInfoScreen"/>
+          <include name="RentalVerify"/>
+          <include name="ProspectsClickNewButton"/>
+          <include name="UnitInfoScreen"/>
+          <include name="initializeVariables"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- ssmproject.login_to_application -->
+      </class> <!-- tests.PerformRentalWithInsurance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

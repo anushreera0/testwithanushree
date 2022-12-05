@@ -9,9 +9,9 @@ public class ledger_verify {
 		double rentAmount=100.00;
 		double prorateRent=36.67;
 		double prorateIns=5.50;
-		double insAmount=15.00;		
+		double insAmount=15.00;
 		double noOfMonthsPaid = Math.floor(amountPaid/totalMonthly);
-		
+
 		double diffAmount=0.00;
 		double remCredits=0.00;
 
@@ -28,7 +28,7 @@ public class ledger_verify {
 					diffAmount=diffAmount-rentAmount;
 					prepayrent=prepayrent-diffAmount;
 					totalprepay=prepayrent+prepayins;
-					
+
 					if(diffAmount>insAmount) {//1>15
 						diffAmount=diffAmount-insAmount;
 						prepayins=prepayins-diffAmount;
@@ -39,16 +39,16 @@ public class ledger_verify {
 						totalprepay=prepayrent+prepayins;//2000
 
 					}
-					
+
 				}
 				else {
 					prepayins=prepayins-diffAmount;//261-1=260
 					totalprepay=prepayrent+prepayins;//1740+260=2000
 				}
-				
-			
+
+
 			}
-			
+
 		}
 		else {//1999<2000
 			remCredits=amountPaid-totalprepay;//2000-1999=1
@@ -69,24 +69,24 @@ public class ledger_verify {
 					totalprepay=prepayrent+prepayins;
 					remCredits=totalprepay-remCredits;
 				}
-				
+
 			}
 			else {
 				prepayrent=prepayrent+remCredits;
 				totalprepay=prepayrent+prepayins;
 				remCredits=totalprepay-remCredits;
 			}
-			
+
 		}
-		
+
 		System.out.printf("prepayrent:%2f\n",prepayrent);
 		System.out.printf("prepayins:%2f\n",prepayins);
 		System.out.printf("remCredits:%2f\n", remCredits);
 		System.out.printf("totalprepay:%2f\n", totalprepay);
 		System.out.printf("diffAmount:%2f\n", diffAmount);
-		
+
 	}
-	
-	
+
+
 
 }

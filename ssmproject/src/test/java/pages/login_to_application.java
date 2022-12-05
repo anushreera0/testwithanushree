@@ -1,11 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-public class login_to_application {
 
-	public WebDriver driver;
+import tests.testBase;
+public class login_to_application extends testBase{
+
 
 	public String randomsequence() {
 
@@ -49,7 +49,7 @@ int n=8;
 
 		return sb.toString();
 		}
-	
+
 	public void login(String UserName, String Password) throws InterruptedException {
 		driver.findElement(By.id("signInName")).sendKeys(UserName);
 		driver.findElement(By.id("password")).sendKeys(Password);

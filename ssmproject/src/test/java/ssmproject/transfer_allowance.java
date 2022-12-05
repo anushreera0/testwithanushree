@@ -71,11 +71,11 @@ public class transfer_allowance {
 			else if(rentAllowance>0.00) {
 				if(feesAllowance<0) {
 					rentAllowance=rentAllowance+feesAllowance;
-					feesAllowance=0.00;	
+					feesAllowance=0.00;
 				}
 				else {
 					rentAllowance=rentAllowance+insAllowance;
-					insAllowance=0.00;					
+					insAllowance=0.00;
 				}
 			}
 
@@ -93,11 +93,11 @@ public class transfer_allowance {
 		}
 		else {
 			if(transferCredits>newfeesAmount&&newfeesAmount>0.00) {
-				feesAllowance=transferCredits-newproratefees;	
+				feesAllowance=transferCredits-newproratefees;
 				total=feesAllowance+rentAllowance+insAllowance-transferCredits;
 			}
 			else if(transferCredits<newfeesAmount&&newfeesAmount>0.00) {
-				feesAllowance=transferCredits-newproratefees;	
+				feesAllowance=transferCredits-newproratefees;
 				total=feesAllowance+rentAllowance+insAllowance-transferCredits;
 			}
 			else {

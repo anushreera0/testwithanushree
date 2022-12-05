@@ -10,7 +10,7 @@ public class pastdueverify {
 		double prorateRent=10.00;
 		double prorateIns=1.50;
 		double prorateFees=0.00;
-		double insAmount=11.00;	
+		double insAmount=11.00;
 		double feesAmount=0.00;
 		double totalMonthly=111.00;
 		double rentL=prorateRent;
@@ -27,7 +27,7 @@ public class pastdueverify {
 				if(diff<prorateIns) {
 					insPaid=diff;
 					diff=insPaid-diff;
-					
+
 				}
 				else {
 					diff=diff-prorateIns;
@@ -42,9 +42,9 @@ public class pastdueverify {
 			}
 		}
 		}
-		
-		
-		
+
+
+
 /*double total=prorateRent+prorateIns;//11.5
 		if(AmountPaid>0.00&&AmountPaid<totalMonthly) {
 			diff=AmountPaid-total;
@@ -58,12 +58,12 @@ public class pastdueverify {
 						insL=diff-prorateIns;
 					}
 					else {
-						
+
 						insL=AmountPaid;
 					}}
 
 				else {
-					
+
 					rentL=AmountPaid;
 				}
 
@@ -81,14 +81,14 @@ public class pastdueverify {
 						total=prorateRent+prorateIns;
 					}
 					else {
-						
+
 						insL=AmountPaid;
 						diff=AmountPaid-prorateIns;
 
 					}}
 
 				else {
-					
+
 					rentL=AmountPaid;
 					diff=AmountPaid-prorateRent;
 				}

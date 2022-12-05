@@ -35,16 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/anushree/.m2/repository/org/testng/testng/7.6.1/testng-7.6.1.jar" sourcepath="C:/Users/anushree/.m2/repository/org/testng/testng/7.6.1/testng-7.6.1-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="org.testng"/>
-			<attribute name="maven.artifactId" value="testng"/>
-			<attribute name="maven.version" value="7.6.1"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
