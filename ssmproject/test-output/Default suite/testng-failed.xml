@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="ssmproject.login_to_application">
+        <methods>
+          <include name="selectUnitType"/>
+          <include name="launch"/>
+          <include name="selectUnit"/>
+          <include name="login"/>
+          <include name="clickNewbutton"/>
+          <include name="clickSaveincustomerInfoDetailsInRentalScreen"/>
+          <include name="clickProspects"/>
+          <include name="clickcustomerInfoDetailsInRentalScreen"/>
+          <include name="ClickRental"/>
+          <include name="contactInfo"/>
+          <include name="setup"/>
+          <include name="customerInfoDetailsInRentalScreen"/>
+          <include name="clickUnitInfo"/>
+        </methods>
+      </class> <!-- ssmproject.login_to_application -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
