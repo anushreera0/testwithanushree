@@ -3,16 +3,18 @@
 <suite name="Failed suite [SSM NextGen]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="tests.PerformRentalWithInsurance">
+      <class name="tests.MoveOutForPastDueUnits">
         <methods>
+          <include name="documentGen"/>
+          <include name="CustomerListingScreen"/>
+          <include name="performPaymentatMoveout"/>
+          <include name="CustomerDashboardScreen"/>
+          <include name="clickMoveOutButtoninMOScreen"/>
           <include name="Login"/>
-          <include name="ContactInfoScreen"/>
-          <include name="RentalVerify"/>
-          <include name="ProspectsClickNewButton"/>
-          <include name="UnitInfoScreen"/>
+          <include name="ClickMoveoutButton"/>
           <include name="initializeVariables"/>
         </methods>
-      </class> <!-- tests.PerformRentalWithInsurance -->
+      </class> <!-- tests.MoveOutForPastDueUnits -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [SSM NextGen] -->

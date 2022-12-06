@@ -4,7 +4,17 @@
   <test name="Regression">
     <classes>
       <class name="tests.testBase"/>
-      <class name="tests.PerformRentalWithInsurance"/>
+      <class name="tests.PerformRentalWithInsurance"/> 
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+  <test name="Moveout">
+    <classes>
+      <class name="tests.testBase"/>
+      <class name="tests.MoveOutForPastDueUnits"/> 
+      
+    </classes>
+  </test> <!-- Test -->
+

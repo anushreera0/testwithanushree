@@ -1,8 +1,13 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import pages.AddDemographicScreen;
+import pages.CustomerInfoScreen;
+import pages.DocumentScreenGen;
+import pages.PerformPayment;
 import pages.Prospects_screen;
 import pages.RentalScreen;
 import pages.contactInfoScreen;
@@ -41,8 +46,8 @@ public class PerformRentalWithInsurance extends testBase{
 		unitInfoScreen unitInfo=PageFactory.initElements(driver, unitInfoScreen.class);
 		unitInfo.clickUnitInfo();
 		unitInfo.selectUnitType(unitSize);
-		unitInfo.selectUnitsize();
-		System.out.println(unitNumber=unitInfo.selectUnit());
+		System.out.println(unitInfo.selectUnitsize());
+		//System.out.println(unitNumber=unitInfo.selectUnit());
 		unitInfo.ClickRental();
 
 	}
@@ -51,9 +56,52 @@ public class PerformRentalWithInsurance extends testBase{
 	public void RentalVerify() throws InterruptedException {
 		RentalScreen rental=PageFactory.initElements(driver, RentalScreen.class);
 		rental.verifyRentalScreen(unitSize, unitNumber);
-		rental.clickcustomerInfoDetailsInRentalScreen();
-		System.out.println(GateCode=rental.customerInfoDetailsInRentalScreen());
-		rental.clickSaveincustomerInfoDetailsInRentalScreen();
 	}
-
+	
+	@Test(dependsOnMethods="RentalVerify")
+	public void CustomerInfo() throws InterruptedException {
+		CustomerInfoScreen cInfo=PageFactory.initElements(driver, CustomerInfoScreen.class);
+		cInfo.clickcustomerInfoDetailsInRentalScreen();
+		System.out.println(GateCode=cInfo.gateCodeGeneration());
+		cInfo.clickSaveincustomerInfoDetailsInRentalScreen();
+	}
+	
+	@Test(dependsOnMethods="CustomerInfo")
+	public void AddDemographic() throws InterruptedException {
+		AddDemographicScreen addDemo=PageFactory.initElements(driver,AddDemographicScreen.class);
+		addDemo.clickAddDemographic();
+		addDemo.selectDemography();
+	}
+	
+	@Test(dependsOnMethods="AddDemographic")
+	public void ClickCompleteRental() throws InterruptedException {
+		driver.findElement(By.xpath("//button[contains(text(),\"Complete Rental\")]")).click();
+	}
+	
+	@Test(dependsOnMethods="ClickCompleteRental")
+	public void PaymentScreen() throws InterruptedException {
+		PerformPayment ppay=PageFactory.initElements(driver,PerformPayment.class);
+		String amountToPay=ppay.verifyPaymentScreen();
+		ppay.cashPayment(amountToPay);
+		
+	}
+	
+	@Test(dependsOnMethods="PaymentScreen")
+	public void DocumentScreen() throws InterruptedException {
+		DocumentScreenGen dgn=PageFactory.initElements(driver, DocumentScreenGen.class);
+		dgn.verifyDocumentScreen();
+		dgn.performdocgen();
+		dgn.clickNextButton();
+		
+	}
+	
+	@Test(dependsOnMethods="DocumentScreen")
+	public void UnitInfoAfterTransaction() throws InterruptedException {
+		
+	}
+	
+	@Test(dependsOnMethods="UnitInfoAfterTransaction")
+	public void CustomerListingScreen() throws InterruptedException {
+		
+	}
 }

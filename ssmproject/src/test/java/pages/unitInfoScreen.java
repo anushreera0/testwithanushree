@@ -35,7 +35,7 @@ public class unitInfoScreen extends testBase{
 	public String selectUnitsize() throws InterruptedException {
 		Thread.sleep(5000);
 		String unitNumber = null;
-	//driver.findElement(By.xpath("//a[@class=\"tab_clic_1 collapsed\"]")).click();
+		driver.findElement(By.xpath("//a[@class=\"tab_clic_1 collapsed\"]")).click();
 		Thread.sleep(20000);
 		WebElement checkboxToCheck=driver.findElement(By.xpath("//td/table/tbody/tr/td[1]/div/label"));
 		if(checkboxToCheck.isEnabled()) {
@@ -50,12 +50,12 @@ public class unitInfoScreen extends testBase{
 
 		return unitNumber;
 	}
-	public String selectUnit() throws InterruptedException {
+	/*public String selectUnit() throws InterruptedException {
 
 		String unitNumber=selectUnitsize();
 		return unitNumber;
 
-	}
+	}*/
 	public void ClickInquiry() throws InterruptedException {
 		driver.findElement(By.xpath("//button[contains(text(),\"Rental\")]")).click();
 		Thread.sleep(7000);

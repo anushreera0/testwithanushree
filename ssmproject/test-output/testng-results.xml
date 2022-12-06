@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="1" failed="1" skipped="3">
+<testng-results ignored="1" total="8" passed="1" failed="1" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-05T17:02:38 IST" name="SSM NextGen" finished-at="2022-12-05T17:03:26 IST" duration-ms="48292">
+  <suite started-at="2022-12-06T19:34:33 IST" name="SSM NextGen" finished-at="2022-12-06T19:35:34 IST" duration-ms="61340">
     <groups>
     </groups>
-    <test started-at="2022-12-05T17:02:38 IST" name="Regression" finished-at="2022-12-05T17:03:26 IST" duration-ms="48292">
+    <test started-at="2022-12-06T19:34:33 IST" name="Regression" finished-at="2022-12-06T19:35:34 IST" duration-ms="61340">
       <class name="tests.testBase">
-        <test-method is-config="true" signature="initializeVariables()[pri:0, instance:tests.testBase@661972b0]" started-at="2022-12-05T17:02:19 IST" name="initializeVariables" finished-at="2022-12-05T17:02:38 IST" duration-ms="18731" status="PASS">
+        <test-method is-config="true" signature="initializeVariables()[pri:0, instance:tests.testBase@323b36e0]" started-at="2022-12-06T19:34:11 IST" name="initializeVariables" finished-at="2022-12-06T19:34:33 IST" duration-ms="21971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeVariables -->
       </class> <!-- tests.testBase -->
-      <class name="tests.PerformRentalWithInsurance">
-        <test-method signature="Login()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7]" started-at="2022-12-05T17:02:38 IST" name="Login" finished-at="2022-12-05T17:03:09 IST" duration-ms="30644" status="PASS">
+      <class name="tests.MoveOutForPastDueUnits">
+        <test-method signature="Login()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:34:33 IST" name="Login" finished-at="2022-12-06T19:35:04 IST" duration-ms="31028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="ProspectsClickNewButton()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7]" started-at="2022-12-05T17:03:09 IST" name="ProspectsClickNewButton" finished-at="2022-12-05T17:03:26 IST" depends-on-methods="tests.PerformRentalWithInsurance.Login" duration-ms="17441" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="CustomerListingScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:35:04 IST" name="CustomerListingScreen" finished-at="2022-12-06T19:35:34 IST" depends-on-methods="tests.MoveOutForPastDueUnits.Login" duration-ms="30164" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button class="btn btn-primary" id="newstore" type="button">...</button> is not clickable at point (1261, 115). Other element would receive the click: <div _ngcontent-anp-c3="" class="loaderIcon">...</div>
-  (Session info: chrome=107.0.5304.123)
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"/customer"}
+  (Session info: chrome=108.0.5359.73)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'MPC40', ip: '192.168.10.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a3f95f8aeb7e0db04b32f05219e13565, clickElement {id=bb5da5a4-e42f-4974-ba78-514a6b18c493}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55514/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a3f95f8aeb7e0db04b32f05219e13565)] -> id: newstore]
-Session ID: a3f95f8aeb7e0db04b32f05219e13565]]>
+Command: [05d44ba788307afe7dd338d08d1c2fb7, findElement {using=link text, value=/customer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58957/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05d44ba788307afe7dd338d08d1c2fb7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-primary" id="newstore" type="button">...</button> is not clickable at point (1261, 115). Other element would receive the click: <div _ngcontent-anp-c3="" class="loaderIcon">...</div>
-  (Session info: chrome=107.0.5304.123)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"/customer"}
+  (Session info: chrome=108.0.5359.73)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'MPC40', ip: '192.168.10.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a3f95f8aeb7e0db04b32f05219e13565, clickElement {id=bb5da5a4-e42f-4974-ba78-514a6b18c493}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55514/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a3f95f8aeb7e0db04b32f05219e13565)] -> id: newstore]
-Session ID: a3f95f8aeb7e0db04b32f05219e13565
+Command: [05d44ba788307afe7dd338d08d1c2fb7, findElement {using=link text, value=/customer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58957/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05d44ba788307afe7dd338d08d1c2fb7
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -50,10 +50,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pages.Prospects_screen.clickNewbutton(Prospects_screen.java:20)
-at tests.PerformRentalWithInsurance.ProspectsClickNewButton(PerformRentalWithInsurance.java:26)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at pages.CustomerListingScreen.clickCustomers(CustomerListingScreen.java:9)
+at tests.MoveOutForPastDueUnits.CustomerListingScreen(MoveOutForPastDueUnits.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -82,17 +84,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProspectsClickNewButton -->
-        <test-method signature="ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7]" started-at="2022-12-05T17:03:26 IST" name="ContactInfoScreen" finished-at="2022-12-05T17:03:26 IST" depends-on-methods="tests.PerformRentalWithInsurance.ProspectsClickNewButton" duration-ms="0" status="SKIP">
+        </test-method> <!-- CustomerListingScreen -->
+        <test-method signature="CustomerDashboardScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:35:34 IST" name="CustomerDashboardScreen" finished-at="2022-12-06T19:35:34 IST" depends-on-methods="tests.MoveOutForPastDueUnits.CustomerListingScreen" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method PerformRentalWithInsurance.ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7] depends on not successfully finished methods]]>
+              <![CDATA[Method MoveOutForPastDueUnits.CustomerDashboardScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method MoveOutForPastDueUnits.CustomerDashboardScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -117,14 +119,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ContactInfoScreen -->
-        <test-method signature="UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7]" started-at="2022-12-05T17:03:26 IST" name="UnitInfoScreen" finished-at="2022-12-05T17:03:26 IST" depends-on-methods="tests.PerformRentalWithInsurance.ContactInfoScreen" duration-ms="0" status="SKIP">
+        </test-method> <!-- CustomerDashboardScreen -->
+        <test-method signature="ClickMoveoutButton()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:35:34 IST" name="ClickMoveoutButton" finished-at="2022-12-06T19:35:34 IST" depends-on-methods="tests.MoveOutForPastDueUnits.CustomerDashboardScreen" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method PerformRentalWithInsurance.UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7] depends on not successfully finished methods]]>
+              <![CDATA[Method MoveOutForPastDueUnits.ClickMoveoutButton()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method MoveOutForPastDueUnits.ClickMoveoutButton()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -149,14 +151,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UnitInfoScreen -->
-        <test-method signature="RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7]" started-at="2022-12-05T17:03:26 IST" name="RentalVerify" finished-at="2022-12-05T17:03:26 IST" depends-on-methods="tests.PerformRentalWithInsurance.UnitInfoScreen" duration-ms="0" status="SKIP">
+        </test-method> <!-- ClickMoveoutButton -->
+        <test-method signature="clickMoveOutButtoninMOScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:35:34 IST" name="clickMoveOutButtoninMOScreen" finished-at="2022-12-06T19:35:34 IST" depends-on-methods="tests.MoveOutForPastDueUnits.ClickMoveoutButton" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method PerformRentalWithInsurance.RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7] depends on not successfully finished methods]]>
+              <![CDATA[Method MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@294425a7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -181,8 +183,72 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RentalVerify -->
-      </class> <!-- tests.PerformRentalWithInsurance -->
+        </test-method> <!-- clickMoveOutButtoninMOScreen -->
+        <test-method signature="performPaymentatMoveout()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:35:34 IST" name="performPaymentatMoveout" finished-at="2022-12-06T19:35:34 IST" depends-on-methods="tests.MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method MoveOutForPastDueUnits.performPaymentatMoveout()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method MoveOutForPastDueUnits.performPaymentatMoveout()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performPaymentatMoveout -->
+        <test-method signature="documentGen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc]" started-at="2022-12-06T19:35:34 IST" name="documentGen" finished-at="2022-12-06T19:35:34 IST" depends-on-methods="tests.MoveOutForPastDueUnits.performPaymentatMoveout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method MoveOutForPastDueUnits.documentGen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method MoveOutForPastDueUnits.documentGen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- documentGen -->
+      </class> <!-- tests.MoveOutForPastDueUnits -->
     </test> <!-- Regression -->
   </suite> <!-- SSM NextGen -->
 </testng-results>
