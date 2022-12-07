@@ -8,50 +8,47 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">SSM NextGen</th></tr>
-<tr><td><a href="#t0">Regression</a></td><td class="num">1</td><td class="num attn">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">61,340</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite1</th></tr>
+<tr><td><a href="#t0">Regression</a></td><td class="num">0</td><td class="num attn">11</td><td class="num">0</td><td class="num attn">1</td><td class="num">283</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SSM NextGen</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.MoveOutForPastDueUnits</td><td><a href="#m0">CustomerListingScreen</a></td><td rowspan="1">1670335504432</td><td rowspan="1">30164</td></tr><tr><th colspan="4">Regression &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">tests.MoveOutForPastDueUnits</td><td><a href="#m1">ClickMoveoutButton</a></td><td rowspan="1">1670335534643</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">CustomerDashboardScreen</a></td><td rowspan="1">1670335534621</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">clickMoveOutButtoninMOScreen</a></td><td rowspan="1">1670335534652</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">documentGen</a></td><td rowspan="1">1670335534675</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">performPaymentatMoveout</a></td><td rowspan="1">1670335534663</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.MoveOutForPastDueUnits</td><td><a href="#m6">Login</a></td><td rowspan="1">1670335473390</td><td rowspan="1">31028</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.PerformRentalWithInsurance</td><td><a href="#m0">Login</a></td><td rowspan="1">1670412862568</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="11">tests.PerformRentalWithInsurance</td><td><a href="#m1">AddDemographic</a></td><td rowspan="1">1670412862670</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">ClickCompleteRental</a></td><td rowspan="1">1670412862703</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m3">ContactInfoScreen</a></td><td rowspan="1">1670412862608</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">CustomerInfo</a></td><td rowspan="1">1670412862656</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">CustomerListingScreen</a></td><td rowspan="1">1670412862790</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">DocumentScreen</a></td><td rowspan="1">1670412862772</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">PaymentScreen</a></td><td rowspan="1">1670412862716</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m8">ProspectsClickNewButton</a></td><td rowspan="1">1670412862599</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">RentalVerify</a></td><td rowspan="1">1670412862634</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">UnitInfoAfterTransaction</a></td><td rowspan="1">1670412862785</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">UnitInfoScreen</a></td><td rowspan="1">1670412862623</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Regression</h2><h3 id="m0">tests.MoveOutForPastDueUnits#CustomerListingScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;/customer&quot;}
-  (Session info: chrome=108.0.5359.73)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;MPC40&apos;, ip: &apos;192.168.10.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [05d44ba788307afe7dd338d08d1c2fb7, findElement {using=link text, value=/customer}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58957/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 05d44ba788307afe7dd338d08d1c2fb7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at pages.CustomerListingScreen.clickCustomers(CustomerListingScreen.java:9)
-	at tests.MoveOutForPastDueUnits.CustomerListingScreen(MoveOutForPastDueUnits.java:23)
+<h2>Regression</h2><h3 id="m0">tests.PerformRentalWithInsurance#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Method public void tests.PerformRentalWithInsurance.Login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : testdata
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.MoveOutForPastDueUnits#ClickMoveoutButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MoveOutForPastDueUnits.ClickMoveoutButton()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.PerformRentalWithInsurance#AddDemographic</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.AddDemographic()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.MoveOutForPastDueUnits#CustomerDashboardScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MoveOutForPastDueUnits.CustomerDashboardScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+<h3 id="m2">tests.PerformRentalWithInsurance#ClickCompleteRental</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.ClickCompleteRental()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.MoveOutForPastDueUnits#clickMoveOutButtoninMOScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+<h3 id="m3">tests.PerformRentalWithInsurance#ContactInfoScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.MoveOutForPastDueUnits#documentGen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MoveOutForPastDueUnits.documentGen()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+<h3 id="m4">tests.PerformRentalWithInsurance#CustomerInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.CustomerInfo()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.MoveOutForPastDueUnits#performPaymentatMoveout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method MoveOutForPastDueUnits.performPaymentatMoveout()[pri:0, instance:tests.MoveOutForPastDueUnits@9f116cc] depends on not successfully finished methods
+<h3 id="m5">tests.PerformRentalWithInsurance#CustomerListingScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.CustomerListingScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.MoveOutForPastDueUnits#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.PerformRentalWithInsurance#DocumentScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.DocumentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.PerformRentalWithInsurance#PaymentScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.PaymentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.PerformRentalWithInsurance#ProspectsClickNewButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.ProspectsClickNewButton()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.PerformRentalWithInsurance#RentalVerify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.PerformRentalWithInsurance#UnitInfoAfterTransaction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.UnitInfoAfterTransaction()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.PerformRentalWithInsurance#UnitInfoScreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PerformRentalWithInsurance.UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

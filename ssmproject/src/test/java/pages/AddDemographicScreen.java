@@ -16,7 +16,8 @@ public class AddDemographicScreen extends RentalScreen{
 		WebElement chk1=driver.findElement(By.xpath("(//input[@type=\"checkbox\"]/following-sibling::span)[1]"));
 		try{
 			chk1.click();
-			if(chk1.isSelected() == true) {
+			WebElement chk=driver.findElement(By.xpath("(//input[@type=\"checkbox\"][contains(@class,\"ng-valid ng-dirty ng-touched\")])[1]"));
+			if(chk.isSelected() == true) {
 				try {
 					Thread.sleep(5000);
 					js.executeScript("window.scrollBy(0,document.body.scrollHeight)","");

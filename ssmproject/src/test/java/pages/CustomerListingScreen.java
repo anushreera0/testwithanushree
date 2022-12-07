@@ -6,7 +6,7 @@ import tests.testBase;
 
 public class CustomerListingScreen extends testBase{
 	public void clickCustomers() {
-		driver.findElement(By.linkText("/customer")).click();
+		driver.findElement(By.xpath("//a[@routerlink=\"/customer\"]/i")).click();
 		driver.findElement(By.className("prospectsHeader")).getText().compareTo("CUSTOMERS");
 	}
 	public void filterForCustomerStatus(String status) throws InterruptedException {

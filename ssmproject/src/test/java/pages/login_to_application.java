@@ -1,5 +1,6 @@
 package pages;
 
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
@@ -49,6 +50,7 @@ int n=8;
 
 		return sb.toString();
 		}
+	
 
 	public void login(String UserName, String Password) throws InterruptedException {
 		driver.findElement(By.id("signInName")).sendKeys(UserName);
@@ -57,6 +59,7 @@ int n=8;
 		Thread.sleep(30000);
 		String Dashboard=driver.findElement(By.className("prospectsHeader")).getText();
 		Assert.assertEquals(Dashboard, "DASHBOARD");
+
 	}
 
 }

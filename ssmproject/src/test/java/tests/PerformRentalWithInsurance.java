@@ -1,7 +1,10 @@
 package tests;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.AddDemographicScreen;
@@ -9,20 +12,39 @@ import pages.CustomerInfoScreen;
 import pages.DocumentScreenGen;
 import pages.PerformPayment;
 import pages.Prospects_screen;
+import pages.ReadExcelFile;
 import pages.RentalScreen;
 import pages.contactInfoScreen;
 import pages.login_to_application;
 import pages.unitInfoScreen;
 
 public class PerformRentalWithInsurance extends testBase{
+
+
 	String unitSize="0.10X0.10";
 	String unitNumber;
 	String GateCode;
-	@Test
-	public void Login() throws InterruptedException {
-		login_to_application loginpage=PageFactory.initElements(driver, login_to_application.class);
-		loginpage.login("ez Manager", "Esoft@555");
+	@DataProvider(name = "testData")
+	public Object[][] testDataExample() throws IOException {
+		ReadExcelFile config=new ReadExcelFile("C:\\Users\\anushree\\OneDrive - E-Softsys LLC\\BookForTest.xls");
+		int rows=config.getRowCount(0);
+		Object[][] signInCred=new Object[rows][2];
+		for(int  i=0;i<rows;i++) {
+			System.out.println(signInCred[i][0]= config.getData(0,i,3,"Book1"));
+			System.out.println(signInCred[i][1]= config.getData(0,i,4,"Book1"));
+		}
+		System.out.println(signInCred);
+		return signInCred;
 	}
+	@Test(dataProvider="testdata")
+	public void Login(String username, String password) throws InterruptedException {
+		login_to_application loginpage=PageFactory.initElements(driver, login_to_application.class);
+		try {
+		loginpage.login(username,password);
+		}
+		catch (Exception e) {
+			System.out.println("signInCred not found");		}
+		}
 	
 	@Test (dependsOnMethods="Login")
 	public void ProspectsClickNewButton() throws InterruptedException {
