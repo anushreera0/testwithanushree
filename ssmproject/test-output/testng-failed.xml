@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Regression(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.PerformRentalWithInsurance">
+      <class name="tests.Perform_Rental_Without_Insurance">
         <methods>
-          <include name="PaymentScreen"/>
-          <include name="Login"/>
-          <include name="ProspectsClickNewButton"/>
-          <include name="CustomerInfo"/>
           <include name="UnitInfoScreen"/>
           <include name="ClickCompleteRental"/>
-          <include name="setUp"/>
+          <include name="ProspectsClickNewButton"/>
+          <include name="Login"/>
+          <include name="PaymentScreen"/>
           <include name="initializeVariables"/>
           <include name="AddDemographic"/>
-          <include name="ContactInfoScreen"/>
-          <include name="RentalVerify"/>
-          <include name="UnitInfoAfterTransaction"/>
-          <include name="DocumentScreen"/>
           <include name="CustomerListingScreen"/>
+          <include name="RentalVerify"/>
+          <include name="DocumentScreen"/>
+          <include name="setUp"/>
+          <include name="ContactInfoScreen"/>
+          <include name="UnitInfoAfterTransaction"/>
+          <include name="CustomerInfo"/>
         </methods>
-      </class> <!-- tests.PerformRentalWithInsurance -->
+      </class> <!-- tests.Perform_Rental_Without_Insurance -->
     </classes>
-  </test> <!-- Regression(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

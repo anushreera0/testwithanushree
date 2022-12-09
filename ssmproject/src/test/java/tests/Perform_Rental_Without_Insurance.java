@@ -14,7 +14,7 @@ import pages.contactInfoScreen;
 import pages.login_to_application;
 import pages.unitInfoScreen;
 
-public class PerformRentalWithInsurance extends testBase{
+public class Perform_Rental_Without_Insurance extends testBase{
 
 
 	String unitSize="0.10X0.10";
@@ -22,7 +22,7 @@ public class PerformRentalWithInsurance extends testBase{
 	String GateCode;
 	
 	
-	@Test(dataProvider = "LoginCredential")
+	@Test
 	public void setUp() throws Exception {
 		driver.get("https://stg.ssm-erp.com");
 		Thread.sleep(10000);
@@ -90,6 +90,11 @@ public class PerformRentalWithInsurance extends testBase{
 		addDemo.selectDemography();
 		addDemo.clickSaveInDemographicScreen();
 	}
+	@Test(dependsOnMethods="AddDemographic")
+	public void removeInsurance() throws InterruptedException {
+		RentalScreen rental=PageFactory.initElements(driver, RentalScreen.class);
+		rental.selectInsurancePremium(" Self Insured");
+	}
 	
 	@Test(dependsOnMethods="AddDemographic")
 	public void ClickCompleteRental() throws InterruptedException {
@@ -109,6 +114,7 @@ public class PerformRentalWithInsurance extends testBase{
 		DocumentScreenGen dgn=PageFactory.initElements(driver, DocumentScreenGen.class);
 		dgn.verifyDocumentScreen();
 		dgn.performdocgen();
+		dgn.reputationManagement();
 		dgn.clickNextButton();
 		
 	}

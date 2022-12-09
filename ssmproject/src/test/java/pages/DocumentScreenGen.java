@@ -11,15 +11,30 @@ public class DocumentScreenGen extends testBase {
 		
 	}
 	public void performdocgen() throws InterruptedException {
-		WebElement chk1=driver.findElement(By.xpath("//span[contains(text(),\"Select All\")]"));
+		WebElement chk1=driver.findElement(By.xpath("//span[contains(text(),'Select All')]"));
 		chk1.click();
-		if(chk1.isSelected()) {
+		WebElement chk=driver.findElement(By.xpath("//label[contains(@class,'pure-material-checkbox mb-0 mt-2')]/input"));
+		if(chk.isSelected()) {
 		////select[contains(@class,"form-control")]
 			driver.findElement(By.xpath("//button[contains(text(),\"Process All\")]")).click();
 			Thread.sleep(10000);
 		}
 		
 	}
+	public void reputationManagement() {
+		try{
+			WebElement rMVisible=driver.findElement(By.xpath("//button[contains(text(),\"Yes\")]"));
+			if(rMVisible.isDisplayed()) {
+				driver.findElement(By.xpath("//button[contains(text(),\"Yes\")]")).click();
+			}
+			else {
+				
+			}
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		}
 	public void clickNextButton() throws InterruptedException {
 		driver.findElement(By.xpath("//button[contains(text(),\"Next\")]")).click();
 		driver.findElement(By.xpath("//button[contains(text(),\"Yes\")]")).click();

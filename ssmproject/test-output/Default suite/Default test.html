@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 07 12:52:53 IST 2022</td>
+<td>Started on:</td><td>Fri Dec 09 18:49:26 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60560 ms)</td>
+<tr><td>Total time:</td><td>369 seconds (369992 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.MoveOutForPastDueUnits.Login()'><b>Login</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.prospectsHeader&quot;}
-  (Session info: chrome=108.0.5359.95)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<td title='tests.Perform_Rental_Without_Insurance.DocumentScreen()'><b>DocumentScreen</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-nqh-c31=&quot;&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1018, 436). Other element would receive the click: &lt;modal-container class=&quot;modal fade show&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot; aria-modal=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/modal-container&gt;
+  (Session info: chrome=108.0.5359.96)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;MPC40&apos;, ip: &apos;192.168.10.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [037d3308298d12dc05abeaf536525fd4, findElement {using=class name, value=prospectsHeader}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59502/devtoo..., se:cdpVersion: 108.0.5359.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 037d3308298d12dc05abeaf536525fd4
+Command: [c937091d95920794bccf6b4dffecb9a1, clickElement {id=ea8a1243-b4a8-4532-94f0-6f1d851bed7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58871/devtoo..., se:cdpVersion: 108.0.5359.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c937091d95920794bccf6b4dffecb9a1)] -&gt; xpath: (//span[contains(text(),&quot;Document Processed&quot;)]/following::button[contains(text(),&quot;OK&quot;)])[1]]
+Session ID: c937091d95920794bccf6b4dffecb9a1
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -95,12 +95,10 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at pages.login_to_application.login(login_to_application.java:58)
-	at tests.MoveOutForPastDueUnits.Login(MoveOutForPastDueUnits.java:18)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pages.DocumentScreenGen.clickNextButton(DocumentScreenGen.java:43)
+	at tests.Perform_Rental_Without_Insurance.DocumentScreen(Perform_Rental_Without_Insurance.java:118)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -127,16 +125,16 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1004219512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1004219512'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.prospectsHeader&quot;}
-  (Session info: chrome=108.0.5359.95)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+</pre></div><a href='#' onClick='toggleBox("stack-trace159651486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace159651486'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-nqh-c31=&quot;&quot; class=&quot;btn btn-primary&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1018, 436). Other element would receive the click: &lt;modal-container class=&quot;modal fade show&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot; aria-modal=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/modal-container&gt;
+  (Session info: chrome=108.0.5359.96)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;MPC40&apos;, ip: &apos;192.168.10.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [037d3308298d12dc05abeaf536525fd4, findElement {using=class name, value=prospectsHeader}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59502/devtoo..., se:cdpVersion: 108.0.5359.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 037d3308298d12dc05abeaf536525fd4
+Command: [c937091d95920794bccf6b4dffecb9a1, clickElement {id=ea8a1243-b4a8-4532-94f0-6f1d851bed7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58871/devtoo..., se:cdpVersion: 108.0.5359.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c937091d95920794bccf6b4dffecb9a1)] -&gt; xpath: (//span[contains(text(),&quot;Document Processed&quot;)]/following::button[contains(text(),&quot;OK&quot;)])[1]]
+Session ID: c937091d95920794bccf6b4dffecb9a1
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -147,12 +145,10 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at pages.login_to_application.login(login_to_application.java:58)
-	at tests.MoveOutForPastDueUnits.Login(MoveOutForPastDueUnits.java:18)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pages.DocumentScreenGen.clickNextButton(DocumentScreenGen.java:43)
+	at tests.Perform_Rental_Without_Insurance.DocumentScreen(Perform_Rental_Without_Insurance.java:118)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -180,8 +176,71 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>60</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
+<td>44</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.Login()'><b>Login</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>31</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.CustomerInfo()'><b>CustomerInfo</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>63</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.RentalVerify()'><b>RentalVerify</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>7</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.setUp()'><b>setUp</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>12</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.removeInsurance()'><b>removeInsurance</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>34</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.UnitInfoScreen()'><b>UnitInfoScreen</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>73</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.ProspectsClickNewButton()'><b>ProspectsClickNewButton</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>23</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.ClickCompleteRental()'><b>ClickCompleteRental</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>0</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.AddDemographic()'><b>AddDemographic</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>21</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.PaymentScreen()'><b>PaymentScreen</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>32</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
+<tr>
+<td title='tests.Perform_Rental_Without_Insurance.ContactInfoScreen()'><b>ContactInfoScreen</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td></td>
+<td>25</td>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -191,8 +250,8 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.MoveOutForPastDueUnits.performPaymentatMoveout()'><b>performPaymentatMoveout</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.performPaymentatMoveout()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
+<td title='tests.Perform_Rental_Without_Insurance.CustomerListingScreen()'><b>CustomerListingScreen</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td><div><pre>java.lang.Throwable: Method Perform_Rental_Without_Insurance.CustomerListingScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -212,8 +271,8 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace77738832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace77738832'><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.performPaymentatMoveout()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace1967434886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1967434886'><pre>java.lang.Throwable: Method Perform_Rental_Without_Insurance.CustomerListingScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -235,10 +294,10 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
 <tr>
-<td title='tests.MoveOutForPastDueUnits.CustomerDashboardScreen()'><b>CustomerDashboardScreen</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.CustomerDashboardScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
+<td title='tests.Perform_Rental_Without_Insurance.UnitInfoAfterTransaction()'><b>UnitInfoAfterTransaction</b><br>Test class: tests.Perform_Rental_Without_Insurance</td>
+<td><div><pre>java.lang.Throwable: Method Perform_Rental_Without_Insurance.UnitInfoAfterTransaction()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -258,54 +317,8 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1073427864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1073427864'><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.CustomerDashboardScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
-<tr>
-<td title='tests.MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen()'><b>clickMoveOutButtoninMOScreen</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1191863711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1191863711'><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.clickMoveOutButtoninMOScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
+</pre></div><a href='#' onClick='toggleBox("stack-trace1835777333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835777333'><pre>java.lang.Throwable: Method Perform_Rental_Without_Insurance.UnitInfoAfterTransaction()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -327,145 +340,7 @@ Session ID: 037d3308298d12dc05abeaf536525fd4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
-<tr>
-<td title='tests.MoveOutForPastDueUnits.CustomerListingScreen()'><b>CustomerListingScreen</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.CustomerListingScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1075236033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1075236033'><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.CustomerListingScreen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
-<tr>
-<td title='tests.MoveOutForPastDueUnits.ClickMoveoutButton()'><b>ClickMoveoutButton</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.ClickMoveoutButton()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace992955027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace992955027'><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.ClickMoveoutButton()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
-<tr>
-<td title='tests.MoveOutForPastDueUnits.documentGen()'><b>documentGen</b><br>Test class: tests.MoveOutForPastDueUnits</td>
-<td><div><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.documentGen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1875532039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1875532039'><pre>java.lang.Throwable: Method MoveOutForPastDueUnits.documentGen()[pri:0, instance:tests.MoveOutForPastDueUnits@4fb61f4a] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>tests.MoveOutForPastDueUnits@4fb61f4a</td></tr>
+<td>tests.Perform_Rental_Without_Insurance@2d7275fc</td></tr>
 </table><p>
 </body>
 </html>

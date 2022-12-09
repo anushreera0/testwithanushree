@@ -5,7 +5,7 @@
   <test name="Regression">
     <classes>
       <class name="tests.testBase"/>
-      <class name="tests.PerformRentalWithInsurance"/> 
+      <class name="tests.Perform_Rental_Without_Insurance"/> 
     </classes>
   </test> <!-- Test -->
   </suite>

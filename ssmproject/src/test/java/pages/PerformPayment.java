@@ -10,14 +10,14 @@ public class PerformPayment extends RentalScreen{
 		driver.findElement(By.xpath("//h5[contains(text(),\"Payments\")]")).getText().compareTo("Payments");
 		String[] amountToPay=driver.findElement(By.className("totalamt_pos")).getText().split(":");
 		System.out.println(amountToPay[1]=amountToPay[1].trim());
-		driver.findElement(By.xpath("//input[contains(@class,\"form-control col-md-6 bg_gray form-control-sm ng-pristine ng-valid ng-touched\")]")).getText().compareTo(amountToPay[1]);
+		driver.findElement(By.xpath("//input[contains(@class,'form-control col-md-6 bg_gray form-control-sm ng-untouched ng-pristine ng-valid')]")).getText().compareTo(amountToPay[1]);
 		return amountToPay[1];
 
 	}
 	
 	public void cashPayment(String amountToPay) throws InterruptedException {
-		
-		Select sel=new Select(driver.findElement(By.xpath("//select[contains(@class,\"form-control form-control-sm\")]")));
+		Thread.sleep(7000);
+		Select sel=new Select(driver.findElement(By.xpath("//td/select[contains(@class,'form-control form-control-sm')]")));
 		sel.selectByVisibleText("Cash");
 		clickPayNow();
 		Thread.sleep(2000);
@@ -41,9 +41,10 @@ public class PerformPayment extends RentalScreen{
 	public void clickPayNow() {
 		driver.findElement(By.xpath("//button[contains(text(),\"Pay Now\")]")).click();
 	}
-	public void transactionSuccess() {
+	public void transactionSuccess() throws InterruptedException {
+		Thread.sleep(10000);
 		////figcaption[contains(text(),"Transaction is in Progress. Please do not leave the page!")]
-		WebElement TransSuccess=driver.findElement(By.xpath("//span[contains(text(),\"Transaction Success!\")]"));
+		WebElement TransSuccess=driver.findElement(By.xpath("//span[contains(text(),'Transaction Success!')]"));
 		
 		
 		if(TransSuccess.isDisplayed()==true) {

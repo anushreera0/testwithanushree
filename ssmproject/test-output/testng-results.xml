@@ -1,37 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="14" passed="0" failed="1" skipped="11">
+<testng-results ignored="0" total="14" passed="11" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-07T17:04:22 IST" name="Suite1" finished-at="2022-12-07T17:04:22 IST" duration-ms="283">
+  <suite started-at="2022-12-09T18:49:26 IST" name="Default suite" finished-at="2022-12-09T18:55:36 IST" duration-ms="369992">
     <groups>
     </groups>
-    <test started-at="2022-12-07T17:04:22 IST" name="Regression" finished-at="2022-12-07T17:04:22 IST" duration-ms="283">
-      <class name="tests.testBase">
-        <test-method is-config="true" signature="initializeVariables()[pri:0, instance:tests.testBase@72d1ad2e]" started-at="2022-12-07T17:03:59 IST" name="initializeVariables" finished-at="2022-12-07T17:04:09 IST" duration-ms="10149" status="PASS">
+    <test started-at="2022-12-09T18:49:26 IST" name="Default test" finished-at="2022-12-09T18:55:36 IST" duration-ms="369992">
+      <class name="tests.Perform_Rental_Without_Insurance">
+        <test-method is-config="true" signature="initializeVariables()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:49:22 IST" name="initializeVariables" finished-at="2022-12-09T18:49:26 IST" duration-ms="3997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeVariables -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.testBase@72d1ad2e]" started-at="2022-12-07T17:04:09 IST" name="setUp" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.testBase.initializeVariables" duration-ms="13032" status="PASS">
+        <test-method signature="setUp()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:49:26 IST" name="setUp" finished-at="2022-12-09T18:49:39 IST" duration-ms="12622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-      </class> <!-- tests.testBase -->
-      <class name="tests.PerformRentalWithInsurance">
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="Login" finished-at="2022-12-07T17:04:22 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="Login()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:49:39 IST" name="Login" finished-at="2022-12-09T18:50:10 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.setUp" duration-ms="31631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="ProspectsClickNewButton()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:50:10 IST" name="ProspectsClickNewButton" finished-at="2022-12-09T18:50:33 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.Login" duration-ms="23098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProspectsClickNewButton -->
+        <test-method signature="ContactInfoScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:50:33 IST" name="ContactInfoScreen" finished-at="2022-12-09T18:50:59 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.ProspectsClickNewButton" duration-ms="25854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactInfoScreen -->
+        <test-method signature="UnitInfoScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:50:59 IST" name="UnitInfoScreen" finished-at="2022-12-09T18:52:13 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.ContactInfoScreen" duration-ms="73783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UnitInfoScreen -->
+        <test-method signature="RentalVerify()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:52:13 IST" name="RentalVerify" finished-at="2022-12-09T18:52:20 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.UnitInfoScreen" duration-ms="7063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RentalVerify -->
+        <test-method signature="CustomerInfo()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:52:20 IST" name="CustomerInfo" finished-at="2022-12-09T18:53:24 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.RentalVerify" duration-ms="63736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerInfo -->
+        <test-method signature="AddDemographic()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:53:24 IST" name="AddDemographic" finished-at="2022-12-09T18:53:45 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.CustomerInfo" duration-ms="21382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDemographic -->
+        <test-method signature="ClickCompleteRental()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:53:45 IST" name="ClickCompleteRental" finished-at="2022-12-09T18:53:46 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.AddDemographic" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickCompleteRental -->
+        <test-method signature="removeInsurance()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:53:46 IST" name="removeInsurance" finished-at="2022-12-09T18:54:20 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.AddDemographic" duration-ms="34076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeInsurance -->
+        <test-method signature="PaymentScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:54:20 IST" name="PaymentScreen" finished-at="2022-12-09T18:54:52 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.ClickCompleteRental" duration-ms="32189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaymentScreen -->
+        <test-method signature="DocumentScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:54:52 IST" name="DocumentScreen" finished-at="2022-12-09T18:55:36 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.PaymentScreen" duration-ms="44002" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[
-Method public void tests.PerformRentalWithInsurance.Login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : testdata]]>
+              <![CDATA[element click intercepted: Element <button _ngcontent-nqh-c31="" class="btn btn-primary" data-dismiss="modal" type="button">...</button> is not clickable at point (1018, 436). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" aria-modal="true" style="display: block;">...</modal-container>
+  (Session info: chrome=108.0.5359.96)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MPC40', ip: '192.168.10.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c937091d95920794bccf6b4dffecb9a1, clickElement {id=ea8a1243-b4a8-4532-94f0-6f1d851bed7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58871/devtoo..., se:cdpVersion: 108.0.5359.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c937091d95920794bccf6b4dffecb9a1)] -> xpath: (//span[contains(text(),"Document Processed")]/following::button[contains(text(),"OK")])[1]]
+Session ID: c937091d95920794bccf6b4dffecb9a1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method public void tests.PerformRentalWithInsurance.Login(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : testdata
-at org.testng.internal.Parameters.findDataProvider(Parameters.java:561)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:772)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-nqh-c31="" class="btn btn-primary" data-dismiss="modal" type="button">...</button> is not clickable at point (1018, 436). Other element would receive the click: <modal-container class="modal fade show" role="dialog" tabindex="-1" aria-modal="true" style="display: block;">...</modal-container>
+  (Session info: chrome=108.0.5359.96)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MPC40', ip: '192.168.10.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c937091d95920794bccf6b4dffecb9a1, clickElement {id=ea8a1243-b4a8-4532-94f0-6f1d851bed7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\anushree\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58871/devtoo..., se:cdpVersion: 108.0.5359.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c937091d95920794bccf6b4dffecb9a1)] -> xpath: (//span[contains(text(),"Document Processed")]/following::button[contains(text(),"OK")])[1]]
+Session ID: c937091d95920794bccf6b4dffecb9a1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pages.DocumentScreenGen.clickNextButton(DocumentScreenGen.java:43)
+at tests.Perform_Rental_Without_Insurance.DocumentScreen(Perform_Rental_Without_Insurance.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -53,305 +120,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="ProspectsClickNewButton()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="ProspectsClickNewButton" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.Login" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.ProspectsClickNewButton()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.ProspectsClickNewButton()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProspectsClickNewButton -->
-        <test-method signature="ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="ContactInfoScreen" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.ProspectsClickNewButton" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.ContactInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactInfoScreen -->
-        <test-method signature="UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="UnitInfoScreen" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.ContactInfoScreen" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.UnitInfoScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UnitInfoScreen -->
-        <test-method signature="RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="RentalVerify" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.UnitInfoScreen" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.RentalVerify()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RentalVerify -->
-        <test-method signature="CustomerInfo()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="CustomerInfo" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.RentalVerify" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.CustomerInfo()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.CustomerInfo()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CustomerInfo -->
-        <test-method signature="AddDemographic()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="AddDemographic" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.CustomerInfo" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.AddDemographic()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.AddDemographic()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddDemographic -->
-        <test-method signature="ClickCompleteRental()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="ClickCompleteRental" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.AddDemographic" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.ClickCompleteRental()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.ClickCompleteRental()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickCompleteRental -->
-        <test-method signature="PaymentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="PaymentScreen" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.ClickCompleteRental" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.PaymentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.PaymentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PaymentScreen -->
-        <test-method signature="DocumentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="DocumentScreen" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.PaymentScreen" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method PerformRentalWithInsurance.DocumentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.DocumentScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DocumentScreen -->
-        <test-method signature="UnitInfoAfterTransaction()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="UnitInfoAfterTransaction" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.DocumentScreen" duration-ms="0" status="SKIP">
+        <test-method signature="UnitInfoAfterTransaction()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:55:36 IST" name="UnitInfoAfterTransaction" finished-at="2022-12-09T18:55:36 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.DocumentScreen" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method PerformRentalWithInsurance.UnitInfoAfterTransaction()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
+              <![CDATA[Method Perform_Rental_Without_Insurance.UnitInfoAfterTransaction()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.UnitInfoAfterTransaction()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method Perform_Rental_Without_Insurance.UnitInfoAfterTransaction()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -377,13 +156,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UnitInfoAfterTransaction -->
-        <test-method signature="CustomerListingScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680]" started-at="2022-12-07T17:04:22 IST" name="CustomerListingScreen" finished-at="2022-12-07T17:04:22 IST" depends-on-methods="tests.PerformRentalWithInsurance.UnitInfoAfterTransaction" duration-ms="0" status="SKIP">
+        <test-method signature="CustomerListingScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc]" started-at="2022-12-09T18:55:36 IST" name="CustomerListingScreen" finished-at="2022-12-09T18:55:36 IST" depends-on-methods="tests.Perform_Rental_Without_Insurance.UnitInfoAfterTransaction" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method PerformRentalWithInsurance.CustomerListingScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods]]>
+              <![CDATA[Method Perform_Rental_Without_Insurance.CustomerListingScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PerformRentalWithInsurance.CustomerListingScreen()[pri:0, instance:tests.PerformRentalWithInsurance@158d2680] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method Perform_Rental_Without_Insurance.CustomerListingScreen()[pri:0, instance:tests.Perform_Rental_Without_Insurance@2d7275fc] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -409,7 +188,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CustomerListingScreen -->
-      </class> <!-- tests.PerformRentalWithInsurance -->
-    </test> <!-- Regression -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- tests.Perform_Rental_Without_Insurance -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
