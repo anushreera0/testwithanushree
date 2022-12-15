@@ -1,5 +1,8 @@
 package pages;
 
+import java.lang.reflect.Array;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -21,6 +24,19 @@ public class DocumentScreenGen extends testBase {
 		}
 		
 	}
+	public void TenantLedgerAndTenantNotes() {
+		Set<String> windowHandles = driver.getWindowHandles();
+		System.out.println(windowHandles);
+		if(driver.getTitle()!="SSM") {
+		while(driver.getTitle()=="Tenant Notes"||driver.getTitle()=="Customer Ledger") {
+			driver.close();
+		}
+		}
+		else {
+			driver.switchTo().window("SSM");
+		}
+		
+	}
 	public void reputationManagement() {
 		try{
 			WebElement rMVisible=driver.findElement(By.xpath("//button[contains(text(),\"Yes\")]"));
@@ -37,6 +53,7 @@ public class DocumentScreenGen extends testBase {
 		}
 	public void clickNextButton() throws InterruptedException {
 		driver.findElement(By.xpath("//button[contains(text(),\"Next\")]")).click();
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("//button[contains(text(),\"Yes\")]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[contains(text(),\"Document Processed\")]")).getText().compareTo("Document Processed");

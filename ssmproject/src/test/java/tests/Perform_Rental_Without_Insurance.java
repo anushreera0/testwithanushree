@@ -22,15 +22,15 @@ public class Perform_Rental_Without_Insurance extends testBase{
 	String GateCode;
 	
 	
-	@Test
+	/*@Test
 	public void setUp() throws Exception {
 		driver.get("https://stg.ssm-erp.com");
 		Thread.sleep(10000);
 		System.out.println(driver.getTitle());
 		driver.manage().window().maximize();
 		
-	}
-	@Test(dependsOnMethods="setUp")
+	}*/
+	@Test
 	public void Login() throws InterruptedException {
 		login_to_application loginpage=PageFactory.initElements(driver, login_to_application.class);
 		try {
@@ -96,7 +96,7 @@ public class Perform_Rental_Without_Insurance extends testBase{
 		rental.selectInsurancePremium(" Self Insured");
 	}
 	
-	@Test(dependsOnMethods="AddDemographic")
+	@Test(dependsOnMethods="removeInsurance")
 	public void ClickCompleteRental() throws InterruptedException {
 		driver.findElement(By.xpath("//button[contains(text(),\"Complete Rental\")]")).click();
 	}

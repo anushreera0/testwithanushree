@@ -3,6 +3,8 @@ package tests;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import com.github.dockerjava.api.model.Driver;
+
 import pages.login_to_application;
 import pages.CustomerListingScreen;
 import pages.CustomerRentalScreen;
@@ -28,10 +30,11 @@ public class MoveOutForPastDueUnits extends testBase{
 	public void CustomerDashboardScreen() throws InterruptedException {
 		CustomerDashboardScreen cds=PageFactory.initElements(driver,CustomerDashboardScreen.class);
 		cds.verifyCustomerDashboardScreen();
+		cds.priorityNotepopup();
 		cds.navigateTocustomerRentalScreen();
 	}
 	@Test(dependsOnMethods ="CustomerDashboardScreen")
-	public void ClickMoveoutButton() {
+	public void ClickMoveoutButton() throws InterruptedException {
 		CustomerRentalScreen cMB=PageFactory.initElements(driver, CustomerRentalScreen.class);
 		cMB.clickMoveOutButton();
 	}
@@ -58,7 +61,9 @@ public class MoveOutForPastDueUnits extends testBase{
 		DocumentScreenGen dgn=PageFactory.initElements(driver, DocumentScreenGen.class);
 		dgn.verifyDocumentScreen();
 		dgn.performdocgen();
+		dgn.TenantLedgerAndTenantNotes();
 		dgn.clickNextButton();
+		driver.quit();
 	}
 	
 	

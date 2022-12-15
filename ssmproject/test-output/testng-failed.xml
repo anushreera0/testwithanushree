@@ -3,24 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Perform_Rental_Without_Insurance">
+      <class name="tests.MoveOutForPastDueUnits">
         <methods>
-          <include name="UnitInfoScreen"/>
-          <include name="ClickCompleteRental"/>
-          <include name="ProspectsClickNewButton"/>
-          <include name="Login"/>
-          <include name="PaymentScreen"/>
-          <include name="initializeVariables"/>
-          <include name="AddDemographic"/>
+          <include name="documentGen"/>
           <include name="CustomerListingScreen"/>
-          <include name="RentalVerify"/>
-          <include name="DocumentScreen"/>
+          <include name="performPaymentatMoveout"/>
+          <include name="CustomerDashboardScreen"/>
+          <include name="clickMoveOutButtoninMOScreen"/>
+          <include name="Login"/>
+          <include name="ClickMoveoutButton"/>
           <include name="setUp"/>
-          <include name="ContactInfoScreen"/>
-          <include name="UnitInfoAfterTransaction"/>
-          <include name="CustomerInfo"/>
+          <include name="initializeVariables"/>
         </methods>
-      </class> <!-- tests.Perform_Rental_Without_Insurance -->
+      </class> <!-- tests.MoveOutForPastDueUnits -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

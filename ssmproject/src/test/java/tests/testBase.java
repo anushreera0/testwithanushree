@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.ReadExcelFile;
@@ -34,7 +35,14 @@ public class testBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 	
+	@BeforeSuite(dependsOnMethods = "initializeVariables")
+	public void setUp() throws Exception {
+		driver.get("https://stg.ssm-erp.com");
+		Thread.sleep(10000);
+		System.out.println(driver.getTitle());
+		driver.manage().window().maximize();
 		
+	}	
 	
 	
 	/*@AfterSuite

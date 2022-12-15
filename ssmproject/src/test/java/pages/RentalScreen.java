@@ -23,7 +23,7 @@ SoftAssert softassertion=new SoftAssert();
 		WebElement insDropdown=driver.findElement(By.xpath("//label[contains(text(),'Insurance')]/following-sibling::div[@class='det_rgt']/select"));
 		Select sel=new Select(insDropdown);
 		sel.selectByVisibleText(selectInsurancePremium);
-		Assert.assertEquals(selectInsurancePremium, insDropdown.getText());
+		//Assert.assertEquals(selectInsurancePremium, insDropdown.getText());
 
 		}
 		catch (Exception e) {
