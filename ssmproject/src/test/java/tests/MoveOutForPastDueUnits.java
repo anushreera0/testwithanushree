@@ -14,11 +14,33 @@ import pages.PerformPayment;
 import pages.CustomerDashboardScreen;
 
 public class MoveOutForPastDueUnits extends testBase{
-	@Test
-	public void Login() throws InterruptedException {
-		login_to_application loginpage=PageFactory.initElements(driver, login_to_application.class);
-		loginpage.login("ez Manager", "Esoft@555");
+	@Test(dataProvider = "LoginCredential")
+	public void setUp(String EnvName,String Environment, String UserName,String Passowrd) throws Exception {
+		try {
+		driver.get(Environment);
+		Thread.sleep(10000);
+		System.out.println(driver.getTitle());
+		driver.manage().window().maximize();
+		
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("EnvName issue for Login");
+			
+		}
+		
 	}
+	@Test(dataProvider = "LoginCredential",dependsOnMethods="setUp")
+	public void Login(String EnvName,String Environment, String UserName,String Password) throws InterruptedException {
+		login_to_application loginpage=PageFactory.initElements(driver, login_to_application.class);
+		try {
+			
+		loginpage.login(UserName,Password);
+		
+		}
+		catch (Exception e) {
+			System.out.println("signInCred not found");		}
+		}
 	@Test(dependsOnMethods ="Login")
 	public void CustomerListingScreen() throws InterruptedException {
 		CustomerListingScreen cls=PageFactory.initElements(driver, CustomerListingScreen.class);

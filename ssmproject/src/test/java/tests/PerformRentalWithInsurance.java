@@ -23,19 +23,27 @@ public class PerformRentalWithInsurance extends testBase{
 	
 	
 	@Test(dataProvider = "LoginCredential")
-	public void setUp() throws Exception {
-		driver.get("https://stg.ssm-erp.com");
+	public void setUp(String EnvName,String Environment, String UserName,String Passowrd) throws Exception {
+		try {
+		driver.get(Environment);
 		Thread.sleep(10000);
 		System.out.println(driver.getTitle());
 		driver.manage().window().maximize();
 		
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("EnvName issue for Login");
+			
+		}
+		
 	}
-	@Test(dependsOnMethods="setUp")
-	public void Login() throws InterruptedException {
+	@Test(dataProvider = "LoginCredential",dependsOnMethods="setUp")
+	public void Login(String EnvName,String Environment, String UserName,String Password) throws InterruptedException {
 		login_to_application loginpage=PageFactory.initElements(driver, login_to_application.class);
 		try {
 			
-		loginpage.login("ez Manager","Esoft@555");
+		loginpage.login(UserName,Password);
 		
 		}
 		catch (Exception e) {
