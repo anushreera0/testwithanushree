@@ -1,6 +1,7 @@
 package excercise;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class practiceJava {
 	
@@ -49,11 +50,32 @@ public class practiceJava {
 		System.out.println("After integ1="+a+"\t integ2="+b);
 	}
 //			3. Write a Java program to check if a vowel is present in a string.
-	public void checkVowelInString() {
-		
+	public static int checkVowelInString(String str) {
+		str=str.toLowerCase();
+		int count=0;
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u') {
+				count+=1;
+			}
+			
+		}
+		return count;
 	}
 //			4. Write a Java program to check if the given number is a prime number.
-	public void checkPrime() {
+	public static void checkPrime(int num) {	
+			
+		if(num==1||num<=0) {
+			
+			
+		}
+		for(int i=0; i<=num/2; i++) {
+			if(num%i==0) {
+				
+			}
+			else {
+				
+			}
+		}
 		
 	}
 //			5. Write a Java program to print a Fibonacci sequence using recursion.
@@ -98,6 +120,11 @@ public class practiceJava {
 		oddNum();
 		System.out.println(reverseString("memyselfandI"));
 		swaptwoNums();
+		System.out.println(checkVowelInString("I am about to Leave s"));
+//		Scanner sc=new Scanner(System.in);
+//		int num=sc.nextInt();
+		checkPrime(1);
+		
 	}
 
 }
