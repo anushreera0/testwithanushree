@@ -1,0 +1,13 @@
+1675754444976	geckodriver	INFO	Listening on 127.0.0.1:61200
+1675754448029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61201" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\anushree\\AppData\\Local\\Temp\\rust_mozprofileJVa2WY"
+1675754449557	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675754449598	Marionette	INFO	Listening on port 61217
+Read port: 61217
+WebDriver BiDi listening on ws://127.0.0.1:61201
+1675754449872	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\anushree\\AppData\\Local\\Temp\\rust_mozprofileJVa2WY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61201/devtools/browser/52d3e8ab-bcf9-480b-a989-c375e920e38e
+1675754502486	Marionette	INFO	Stopped listening on port 61217
+Dynamically enable window occlusion 1
+console.error: (new AbortError("IndexedDB: main/url-classifier-skip-urls list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.jsm", 18))
