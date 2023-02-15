@@ -32,13 +32,19 @@ public class practiceJava {
 //			1. How do you reverse a string in Java?
 	public static String reverseString(String str) {
 		
-		StringBuilder reversed=new StringBuilder();
+//		StringBuilder reversed=new StringBuilder();
+//		char[] ch=str.toCharArray();
+//		for(int i=ch.length-1;i>=0;i--) {
+//			reversed.append(ch[i]);
+//		}
+//	
+//		return reversed.toString();
+		String reversedString="";
 		char[] ch=str.toCharArray();
-		for(int i=ch.length-1;i>=0;i--) {
-			reversed.append(ch[i]);
+		for (int i=str.length()-1;i>=0;i--) {
+			reversedString=reversedString+ch[i];
 		}
-	
-		return reversed.toString();
+		return reversedString.toString();
 	}
 //			2. How do you swap two numbers without using a third variable in Java?
 	public static void swaptwoNums() {
@@ -118,7 +124,7 @@ public class practiceJava {
 	public static void main(String[] args) {
 		naturalNum();
 		oddNum();
-		System.out.println(reverseString("memyselfandI"));
+		System.out.println(reverseString("Love you so much"));
 		swaptwoNums();
 		System.out.println(checkVowelInString("I am about to Leave s"));
 //		Scanner sc=new Scanner(System.in);
