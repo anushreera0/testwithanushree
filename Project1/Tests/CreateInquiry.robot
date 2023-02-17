@@ -17,7 +17,7 @@ ${URL}            https://stg.ssm-erp.com
 ${Browser}        Chrome
 ${MenuItem}       Prospects
 ${Store}    TestP0045 Public Storage Canadian Properties
-${UnitSize}    0.10X0.11 
+${UnitSize}    0.10X0.11
 
 *** Test Cases ***
 Create Inquiry    
@@ -28,10 +28,10 @@ Create Inquiry
     Select unit
     Click on Inquiry button
     Verify Inquiry screen
-    Add Notes and Follow Up
+    Add Notes
     Click Create Inquiry button
-    Verify Transaction Success
-    Verify Unit Info screen after Inquiry creation
+    # Verify Transaction Success
+    # Verify Unit Info screen after Inquiry creation
 
 # Create Inquiry with Follow Up
     
@@ -66,10 +66,14 @@ Select unit
 Click on Inquiry button
     Click Inquiry button
 Verify Inquiry screen
-Add Notes and Follow Up
+    Verification of Inquiry screen
+Add Notes
+    Add Notes in Prospects
 Click Create Inquiry button
-Verify Transaction Success
-Verify Unit Info screen after Inquiry creation
+    Click Create Inquiry Button
+# Verify Transaction Success
+    
+# Verify Unit Info screen after Inquiry creation
 
 
     
